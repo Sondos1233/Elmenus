@@ -1,0 +1,32 @@
+#aDiscountdiv {
+  background-color: var(--first-color);
+}
+#aDiscountdiv #aDiscountPar {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #FFFFFF;
+  font-family: var(--font-family);
+}
+#aDiscountdiv #aDiscountPar a {
+  color: #FFFFFF;
+}
+
+#aTastyOffers {
+  background-color: #FAF9F8;
+}
+#aTastyOffers #aTastPar {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #464748;
+}
+#aTastyOffers #aSeeallLink {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--first-color);
+}
+
+/*# sourceMappingURL=Delivery.css.map */

@@ -1,0 +1,24 @@
+@use 'mixins';
+
+#aDiscountdiv{
+    @include mixins.backgrounds(var(--first-color));
+    #aDiscountPar{
+        text-align: center;
+        @include mixins.font(16px,400,23px,#FFFFFF);
+        font-family: var(--font-family);
+        a{
+            color: #FFFFFF;
+        }
+    }
+}
+
+#aTastyOffers{
+    @include mixins.backgrounds(#FAF9F8);
+    #aTastPar{
+        @include mixins.font(28px,600,40px,#464748);
+    }
+    #aSeeallLink{
+        @include mixins.font(14px,600,20px,var(--first-color))
+    }
+}
+
