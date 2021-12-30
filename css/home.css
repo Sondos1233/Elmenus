@@ -1,0 +1,61 @@
+img{
+    vertical-align: middle;
+}
+.home_main {
+    background-image: url(../images/dishes.jpg);
+    background-size: cover;
+    
+}
+nav .btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    line-height: 20px;
+}
+.btn{
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.btn-primary{
+    background-color: var(--first-color);
+    border:var(--first-color) ;
+}
+.btn-primary:hover{
+    background-color: var(--first-color);
+    border:var(--first-color) ;
+    opacity: 0.9;
+}
+.home_main_section{
+    padding-top: 50px;
+}
+.home_main_title{
+    max-width: 760px;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 68px;
+    margin: 0 auto ;
+}
+.input-holder{
+    width: 100%;
+    position: relative;
+}
+.home_main_section input{
+    width: 100%;
+    line-height: 65px;
+    padding: 0 0 0 60px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+.home_main_section .search-icon{
+    position: absolute;
+    right: 18px;
+    top: 35%;
+}

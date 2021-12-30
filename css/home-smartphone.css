@@ -1,0 +1,7 @@
+.home_main nav .home_sign{
+    display: none;
+}
+.home_main nav .home_logo{
+    display: block;
+    margin: auto;
+}
