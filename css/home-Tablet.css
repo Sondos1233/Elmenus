@@ -5,3 +5,52 @@
     display: block;
     margin: auto;
 }
+.home_main_title{
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 30px auto 70px;
+}
+.section_footer_link1{
+    border: none;
+    border-bottom:1px solid #a9acae;
+    
+}
+.order_online_footer{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.order_online_footer .delivery-btn{
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    width: 30%;
+}
+.footer_footer .social,.more-links,.copyright{
+    margin: auto;
+    text-align: center;
+
+}
+.footer_footer .social{
+    padding-top: 12px;
+    border-top:1px solid #c3c5c7;
+    border-bottom: 1px solid #c3c5c7;
+}
+.footer-images{
+    text-align: center;
+    background: url(/images/footer-illustration.png) no-repeat bottom;
+    padding-bottom: 250px;
+}
+.footer-images img{
+    width: 100px;
+}
+.footer-images img.img1{
+    width: 200px;
+}
+.input-holder2{
+    margin-left: 0;
+}
+.home_main_section_content button{
+    margin-left:0;
+}
