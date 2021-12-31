@@ -1,0 +1,87 @@
+
+.reach h1{
+    font-size: 72px;
+    color: rgb(237, 237, 237);
+    font-weight: bolder;
+    top:60px;
+    left: 12px;
+    width: 60%;
+}
+.reach form{
+    width: 40%;
+    top:60px;
+    right: 16px;
+    
+
+}
+h3,h4{
+    font-size: 26px;
+    line-height: 1em;
+    font-family: Muli;
+    font-weight: 800;
+}
+.reach form h3{
+    color: rgb(231, 98, 75);
+}
+.card{
+    border: 3px solid var(--border-color);
+    box-shadow: 0 20px 34px 0 rgb(0 0 0 / 20%);
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    border-radius:20px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 12px 24px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.btn-primary {
+    background-color: var(--first-color);
+    border: var(--first-color);
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 600;
+    font-family: Work Sans;
+}
+
+.btn-primary:hover {
+    background-color: var(--bt-hover);
+    border: var(--first-color);
+}
+.formSubmit{
+    bottom:-40px;
+    right:120px
+}
+.body h3{
+    color:var(--text1-color);
+}
+.body h4{
+    color: var(--text2-color);
+}
+.body .sec1 img{
+    width: 68px;
+    height: 55px;
+}
+.body .sec2{
+    margin-top: 150px ;
+}
+.body .sec2 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(45, 45, 45);
+}
+footer {
+    margin-bottom: 30px;
+    margin-top:50px ;
+}
+footer p{
+    float: right;
+}

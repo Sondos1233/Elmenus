@@ -1,0 +1,38 @@
+.reach h1{
+    display: none;
+}
+.reach form{
+    width: 200px;
+    left: 30%;
+}
+.formSubmit{
+    bottom:-40px;
+    left: 10px;
+}
+.body{
+    margin-top: 650px;
+}
+.body .sec1{
+    padding-left: 20%;
+}
+
+.body .sec2{
+   padding-left: 10%;
+   margin-top: 20px;
+}
+.body .sec2 p{
+    margin-left: 12px;
+}
+.body .sec2 .step,footer{
+    text-align: center;
+}
+
+footer p{
+    float: none;
+    margin-top: 12px;
+}
+
+.sec2 img{
+    width: 320px;
+    height: 207px;
+}
