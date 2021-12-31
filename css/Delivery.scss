@@ -1,6 +1,4 @@
 @use "mixins";
-
-
 #aDiscountdiv {
   @include mixins.backgrounds(var(--first-color));
   #aDiscountPar {
@@ -19,7 +17,7 @@
   @include mixins.border(0,1px solid #dfe2e6);
   .aSearchIcon{
     color: gray;
-    right: 51%;
+    right: 3%;
     bottom: 40%;
   }
   .aChangeButton{
@@ -95,7 +93,7 @@
       @include mixins.backgrounds(rgba(0, 0, 0, 0.2));
       @include mixins.border(0 25px 25px 0);
       position: absolute;
-      bottom: -12px;
+     bottom: -12px; 
       left: 12px;
       transition-property: all;
       transition-duration: 0.5s;
