@@ -14,9 +14,12 @@
     <!-- css link -->
     <link rel="stylesheet" href="../css/Delivery.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../css/DeliveryMedia.css" media='screen and (max-width: 1020px)'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     
+        <link rel="stylesheet" href="../css/DeliveryMedia.css" media='screen and (max-width: 1200px)'>
+        <link rel="stylesheet" href="../css/DeliveryMediasmart.css" media='screen and (min-width: 500px) and (max-width: 1030px)'>
+
     <link rel="stylesheet" href="../css/footer-style.css" />
     <link rel="stylesheet" href="../css/footer_tablet.css"
         media="screen and (min-width: 501px) and (max-width: 1200px)" />
@@ -27,13 +30,19 @@
 <body>
     <!--start of Search Bar-->
     <div class="aSearchDiv sticky-top">
-        <form class="d-flex">
-            <i class="fas fa-search position-absolute aSearchIcon"></i>
-            <input style="width: 50%;" class="me-2 form-control" type="search" placeholder="Find a Restaurant" aria-label="Search">
-            <i style="color: var(--first-color); font-size: 25px; " class="mt-1 ms-2 fas fa-map-marker-alt"></i>
-            <span style="font-size:20px; line-height:32px; font-weight: 600;">&nbsp; Deliver </span>
-            <span style="color: var(--first-color); font-size:20px; line-height:32px; font-weight: 600;">&nbsp; Restaurant Area &nbsp;&nbsp;</span>
-            <button class="btn btn-outline aChangeButton" type="submit">CHANGE</button>
+        <form class="d-flex flex-lg-row">
+            <div class="position-relative aSearchL" style="width: 60%;">
+                <i class="fas fa-search position-absolute aSearchIcon"></i>
+                <input style="width: 100%;" class="me-2 form-control" type="search" placeholder="Find a Restaurant"
+                    aria-label="Search">
+            </div>
+            <div style="width: 40%;" class="aRightL">
+                <i style="color: var(--first-color); font-size: 25px; " class="mt-1 ms-2 fas fa-map-marker-alt"></i>
+                <span style="font-size:20px; line-height:32px; font-weight: 600;">&nbsp; Deliver </span>
+                <span style="color: var(--first-color); font-size:20px; line-height:32px; font-weight: 600;">&nbsp;
+                    Restaurant Area &nbsp;&nbsp;</span>
+                <button class="btn btn-outline aChangeButton" type="submit">CHANGE</button>
+            </div>
         </form>
     </div>
     <!--End of Search Bar-->
@@ -395,9 +404,70 @@
                 <!-- Start of Restaurant section -->
                 <section class="aRestaurant mt-4">
                     <p id="aTastPar">Restaurants <span style="font-size:medium;">( 96 )</span> </p>
-                    <div class="container aResDiv ">
-                        <div class="row ">
-                            <div class="col-xl-4 col-lg-12">
+                    <div class="container-fluid aResDiv ">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
                                 <div class="aContentCard">
                                     <a href="#" class="aLinkCard">
                                         <div class="card aD">
@@ -459,7 +529,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-12">
+                            <div class="col-lg-4 col-md-12">
                                 <div class="aContentCard">
                                     <a href="#" class="aLinkCard">
                                         <div class="card aD">
@@ -521,7 +591,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-12">
+                            <div class="col-lg-4 col-md-12 mt-5">
                                 <div class="aContentCard">
                                     <a href="#" class="aLinkCard">
                                         <div class="card aD">
@@ -583,7 +653,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-12 mt-5">
+                            <div class="col-lg-4 col-md-12 mt-5">
                                 <div class="aContentCard">
                                     <a href="#" class="aLinkCard">
                                         <div class="card aD">
@@ -645,7 +715,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-12 mt-5">
+                            <div class="col-lg-4 col-md-12 mt-5">
                                 <div class="aContentCard">
                                     <a href="#" class="aLinkCard">
                                         <div class="card aD">
@@ -707,7 +777,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-12 mt-5">
+                            <div class="col-lg-4 col-md-12 mt-5">
                                 <div class="aContentCard">
                                     <a href="#" class="aLinkCard">
                                         <div class="card aD">
@@ -769,7 +839,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-12 mt-5">
+                            <div class="col-lg-4 col-md-12 mt-5">
                                 <div class="aContentCard">
                                     <a href="#" class="aLinkCard">
                                         <div class="card aD">
@@ -831,69 +901,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-12 mt-5">
-                                <div class="aContentCard">
-                                    <a href="#" class="aLinkCard">
-                                        <div class="card aD">
-                                            <figure class="aFigRes position-relative">
-                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
-                                                    class="aImg card-img-top" alt="...">
-                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
-                                                        class="align-self-center fas fa-chevron-right "
-                                                        style="margin-bottom: 40px;"></i></div>
-                                                <figcaption class="aImgCaption">
-                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
-
-                                                </figcaption>
-                                            </figure>
-                                            <div class="card-body aCardBody">
-                                                <div>
-                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
-                                                        <img id="aImgRes"
-                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
-                                                            alt="" class="rounded-3 me-3 ">
-                                                        <h3 id="aResName">Restaurant name
-                                                            <i style="color: gold; font-size: 12px;"
-                                                                class="fas fa-star flex-fill"></i>
-                                                            <i style="color: gold; font-size: 12px;"
-                                                                class="fas fa-star"></i>
-                                                            <i style="color: gold; font-size: 12px;"
-                                                                class="fas fa-star"></i>
-                                                            <i style="color: gold; font-size: 12px;"
-                                                                class="fas fa-star"></i>
-                                                            <span id="aResType">Type of this Restaurant</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <div class="alert-success aDisAlert" role="alert">
-                                                        % 10 EGP on orders above 50 EGP
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
-                                                    <div>
-                                                        <i style="color: gray; flex-basis: 10px;"
-                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
-
-                                                    </div>
-                                                    <div>
-                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
-                                                            class="fas fa-circle">Order online&nbsp;</i>
-                                                    </div>
-
-                                                    <div>
-                                                        <i style="color: #f7b500; flex-basis: 20%;"
-                                                            class="fas fa-street-view"> on tracking</i>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-12 mt-5">
+                            <div class="col-lg-4 col-md-12 mt-5">
                                 <div class="aContentCard">
                                     <a href="#" class="aLinkCard">
                                         <div class="card aD">

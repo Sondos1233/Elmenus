@@ -1,5 +1,31 @@
-#next, #previous, .anext, .aprevious, .aFilterSec {
+#next,
+#previous,
+.anext,
+.aprevious,
+.aFilterSec {
   display: none;
+}
+
+.aRestaurant,
+.aTopDishes, .aResDiv {
+  margin-left: 0;
+  overflow-y: hidden;
+}
+
+.aSearchL {
+  flex-basis: 50%;
+}
+
+.aRightL {
+  flex-basis: 50%;
+}
+
+#aWords {
+  width: 100%;
+}
+
+.aCardBody {
+  margin: -40px -15px;
 }
 
 /*# sourceMappingURL=DeliveryMedia.css.map */
