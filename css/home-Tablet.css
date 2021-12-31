@@ -48,9 +48,24 @@
 .footer-images img.img1{
     width: 200px;
 }
-.input-holder2{
-    margin-left: 0;
-}
-.home_main_section_content button{
+
+.home_main_section_content button,.input-holder2{
     margin-left:0;
 }
+
+.input-holder2{
+    margin-top: 8px;
+    width: 100%;
+      
+}
+.input-holder2 input{
+    width: 100%;
+}
+
+.home_main_section_content .submit-btn{
+    width: 40%;
+    margin-top: 8px;
+    margin-left: 30%;
+
+}
+
