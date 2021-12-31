@@ -68,6 +68,10 @@ nav .btn {
     background-color: var(--bt-hover);
     border: var(--first-color);
 }
+.btn-primary:active {
+    background-color: var(--bt-hover);
+    border: var(--first-color);
+}
 
 .home_main_title {
     text-align: center;
@@ -80,7 +84,6 @@ nav .btn {
 }
 
 .input-holder,.input-holder2 {
-   
     position: relative;
     
 }
