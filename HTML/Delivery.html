@@ -8,31 +8,64 @@
     <!-- bootstrap css cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awesom cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- css link -->
     <link rel="stylesheet" href="../css/Delivery.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/DeliveryMedia.css" media='screen and (max-width: 1020px)'>
+    
+    <link rel="stylesheet" href="../css/footer-style.css" />
+    <link rel="stylesheet" href="../css/footer_tablet.css"
+        media="screen and (min-width: 501px) and (max-width: 1200px)" />
+    <link rel="stylesheet" href="../css/footer_smartphone.css" media="screen and (max-width: 500px)" />
     <title>elmenus</title>
 </head>
 
 <body>
+    <!--start of Search Bar-->
+    <div class="aSearchDiv sticky-top">
+        <form class="d-flex">
+            <i class="fas fa-search position-absolute aSearchIcon"></i>
+            <input style="width: 50%;" class="me-2 form-control" type="search" placeholder="Find a Restaurant" aria-label="Search">
+            <i style="color: var(--first-color); font-size: 25px; " class="mt-1 ms-2 fas fa-map-marker-alt"></i>
+            <span style="font-size:20px; line-height:32px; font-weight: 600;">&nbsp; Deliver </span>
+            <span style="color: var(--first-color); font-size:20px; line-height:32px; font-weight: 600;">&nbsp; Restaurant Area &nbsp;&nbsp;</span>
+            <button class="btn btn-outline aChangeButton" type="submit">CHANGE</button>
+        </form>
+    </div>
+    <!--End of Search Bar-->
+    <!--start of website tree-->
+    <div class="aRootDiv">
+        <a class="aRootWords" style="text-decoration-line: none;" href="../index.html">Home</a>
+        <a class="aRootWords" style="text-decoration-line: none;" href="#">/ Cairo</a>
+        <a class="aRootWords" style="text-decoration-line: none;" href="#"> / Haram / </a> <span
+            style="font-size: 14px; color: #333333;"> Restaurants' Area</span>
+    </div>
+    <!--End of website tree-->
+
     <!-- start of Discount code div -->
-    <section class="container-fluid m-0" id="aDiscountdiv">
-        <p class="p-1" id="aDiscountPar">
-            50EGP OFF your 1st order for a limited time on orders above 120 EGP Use Code: FIRST50 | 🍔🍕 <a href="#id">
+    <section class="container-fluid" id="aDiscountdiv">
+        <div class="p-1" id="aDiscountPar">
+            50EGP OFF your 1st order for a limited time on orders above 120 EGP Use Code: FIRST50 | 🍔🍕 <a href="#TD">
                 Click here to start </a>
-        </p>
+        </div>
     </section>
     <!-- End of Discount code div -->
-    <!-- start of Discount code div -->
-    <section class="container-fluid m-0" id="aTastyOffers">
+
+    <!-- start of Offers code div -->
+    <section class="container-fluid" class="aTastyOffers">
         <div class="container-fluid" id="aWords">
             <div class="row">
                 <div class="col-6">
                     <p id="aTastPar">Tasty Offers</p>
                 </div>
-                <div class="col-6">
-                    <a id="aSeeallLink" href="#">See All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <div class="col-6 ">
+                    <a class="float-end p-2" id="aSeeallLink" href="#">See All <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill"
+                            viewBox="0 0 16 16">
                             <path
                                 d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                         </svg></a>
@@ -40,10 +73,1008 @@
             </div>
         </div>
 
-        <div class="container" id="aOfferCards">
+        <div class="container-fluid" id="aOfferCards">
+            <div class="row mb-3">
+                <div class="col-lg-3 col-md-4 position-relative">
+                    <a class="aLinkCard" href="#">
+                        <figure class="aFigRes">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/12e76025-a7d8-4a6b-b0be-67b9b62e223e.jpg"
+                                class="card-img-top aImgCard" alt="...">
+                            <figcaption class="aImgCaption">
+                                <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+                            </figcaption>
+                        </figure>
+                        <div class=" position-relative card-body aCardBody">
 
+                            <img id="aImgRes"
+                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/8e900114-c911-4a9e-843d-a929b10c3073.jpg"
+                                alt="" class="rounded-3 me-3 float-start">
+
+                            <h3 class="card-title " id="aResName">Restaurant name</h3>
+                            <div class="mt-3">
+                                <div class="alert-success aDisAlert" role="alert">
+                                    % 10 EGP on orders above 50 EGP
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 position-relative">
+                    <a class="aLinkCard" href="#">
+                        <figure class="aFigRes">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/12e76025-a7d8-4a6b-b0be-67b9b62e223e.jpg"
+                                class="card-img-top aImgCard" alt="...">
+                            <figcaption class="aImgCaption">
+                                <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+                            </figcaption>
+                        </figure>
+                        <div class=" position-relative card-body aCardBody">
+
+                            <img id="aImgRes"
+                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/8e900114-c911-4a9e-843d-a929b10c3073.jpg"
+                                alt="" class="rounded-3 me-3 float-start">
+
+                            <h3 class="card-title " id="aResName">Restaurant name</h3>
+                            <div class="mt-3">
+                                <div class="alert-success aDisAlert" role="alert">
+                                    % 10 EGP on orders above 50 EGP
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 position-relative">
+                    <a class="aLinkCard" href="#">
+                        <figure class="aFigRes">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/12e76025-a7d8-4a6b-b0be-67b9b62e223e.jpg"
+                                class="card-img-top aImgCard" alt="...">
+                            <figcaption class="aImgCaption">
+                                <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+                            </figcaption>
+                        </figure>
+                        <div class=" position-relative card-body aCardBody">
+
+                            <img id="aImgRes"
+                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/8e900114-c911-4a9e-843d-a929b10c3073.jpg"
+                                alt="" class="rounded-3 me-3 float-start">
+
+                            <h3 class="card-title " id="aResName">Restaurant name</h3>
+                            <div class="mt-3">
+                                <div class="alert-success aDisAlert" role="alert">
+                                    % 10 EGP on orders above 50 EGP
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 position-relative">
+                    <a class="aLinkCard" href="#">
+                        <figure class="aFigRes">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/12e76025-a7d8-4a6b-b0be-67b9b62e223e.jpg"
+                                class="card-img-top aImgCard" alt="...">
+                            <figcaption class="aImgCaption">
+                                <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+                            </figcaption>
+                        </figure>
+                        <div class=" position-relative card-body aCardBody">
+
+                            <img id="aImgRes"
+                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/8e900114-c911-4a9e-843d-a929b10c3073.jpg"
+                                alt="" class="rounded-3 me-3 float-start">
+
+                            <h3 class="card-title " id="aResName">Restaurant name</h3>
+                            <div class="mt-3">
+                                <div class="alert-success aDisAlert" role="alert">
+                                    % 10 EGP on orders above 50 EGP
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Slider buttons -->
+                <button type="button " id="previous" class="rounded-circle"> <svg xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" fill="white" class="bi bi-chevron-left" viewBox="0 0 20 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg> </button>
+                <button type="button" id="next" class="rounded-circle"> <b> <svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" fill="white" class="bi bi-chevron-right" viewBox="0 0 20 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg> </b></button>
+            </div>
         </div>
     </section>
+    <!-- End of offers code div -->
+
+    <!-- Start of Discover and filter section -->
+    <div class="container-fluid mt-4 ">
+        <div class="row">
+            <div class="col-lg-3">
+                <section class="aFilterSec container-fluid">
+                    <h3 class="aShowWord"> Show results for: </h3>
+                    <div class="aOnlineOrder row">
+                        <label class="switch position-relative d-inline-block mt-3 col-6">
+                            <input type="checkbox" name="" id="">
+                            <span class="slider round position-absolute"></span>
+                        </label>
+                        <p class="col-6 aOnlinetext mt-3">Online ordering &nbsp;&nbsp;
+                            <span style="color: #4caf50;">
+                                <i class="fas fa-check-circle"></i> Order online
+                            </span>
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <label class="abox position-relative d-block">
+                            <input type="checkbox" name="">
+                            <span class="acheck position-absolute"><i class="fas fa-check acheckmark"></i></span>
+                        </label>
+                        <i class="fas fa-door-open" style="color: #7b7d7f; margin-left: 40px; font-size: 15px;"> &nbsp;
+                            Open now</i>
+                        <br>
+                        <label class="abox position-relative d-block mt-2">
+                            <input type="checkbox" name="">
+                            <span class="acheck position-absolute"><i class="fas fa-check acheckmark"></i></span>
+                        </label>
+                        <i class="fas fa-percent" style="color: #7b7d7f; margin-left: 40px; font-size: 15px;"> &nbsp;
+                            Promo</i>
+                    </div>
+                    <hr>
+                    <h5 class="aSortbyTitle">Sort by:</h5>
+                    <div class="container-fluid acontainerSort">
+                        <div class="row">
+                            <div class="col-2">
+                                <label class="aRadio">
+                                    <input type="radio" name="sort" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10 aSortType">Popular</div>
+
+                            <div class="col-2 ">
+                                <label class="aRadio">
+                                    <input type="radio" name="sort" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10 aSortType">Rating</div>
+                            <div class="col-2 ">
+                                <label class="aRadio">
+                                    <input type="radio" name="sort" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10  aSortType">Delivery Time</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 class="aSortbyTitle">Dishes:</h5>
+                    <div class="container-fluid acontainerSort">
+                        <div class="row">
+                            <div class="col-2">
+                                <label class="aRadio">
+                                    <input type="radio" name="type" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10 aSortType">Pizza</div>
+
+                            <div class="col-2 ">
+                                <label class="aRadio">
+                                    <input type="radio" name="type" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10 aSortType">Fried Chicken</div>
+                            <div class="col-2 ">
+                                <label class="aRadio">
+                                    <input type="radio" name="type" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10  aSortType">Pasta</div>
+                            <div class="col-2 ">
+                                <label class="aRadio">
+                                    <input type="radio" name="type" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10  aSortType">Grilled Chicken</div>
+                            <div class="col-2 ">
+                                <label class="aRadio">
+                                    <input type="radio" name="type" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10  aSortType">Burgers</div>
+                            <div class="col-2 ">
+                                <label class="aRadio">
+                                    <input type="radio" name="type" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10  aSortType">Shawerma</div>
+                            <div class="col-2 ">
+                                <label class="aRadio">
+                                    <input type="radio" name="type" id="">
+                                    <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+                                </label>
+                            </div>
+                            <div class="col-10  aSortType">Grilles</div>
+                            <div class="mt-2 mb-2"><a href="#" class="aLink33More">+33 more</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End of Discover and filter section -->
+
+            <!-- Start of Top Dishes section -->
+            <div class="col-xl-9 col-lg-12">
+                <section class="aTopDishes" id="TD">
+                    <div class="container-fluid" class="aWords">
+                        <div class="row">
+                            <div class="col-6">
+                                <p id="aTastPar">Discover Top Dishes</p>
+                            </div>
+                            <div class="col-6">
+                                <a class="float-end pt-2 ms-5" id="aSeeallLink" href="#">See All <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg></a>
+                            </div>
+                            <div class="container">
+                                <div class="row position-relative">
+                                    <div class="col aDivTopDish">
+                                        <a href="#">
+                                            <img width="100%"
+                                                src="https://www.elmenus.com/public/img/should-delete/all-dishes.png"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col aDivTopDish">
+                                        <a href="#">
+                                            <img width="100%"
+                                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col aDivTopDish">
+                                        <a href="#">
+                                            <img width="100%"
+                                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/a9dd12fb-782a-40d7-a9b3-34fba2802d2b.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col aDivTopDish">
+                                        <a href="#">
+                                            <img width="100%"
+                                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c4169de0-5ef1-462f-b9da-b190d5616acf.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col aDivTopDish">
+                                        <a href="#">
+                                            <img width="100%"
+                                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/444d49c0-f073-4cba-bbb6-36838b1933f4.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col aDivTopDish">
+                                        <a href="#">
+                                            <img width="100%"
+                                                src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f7e33790-77d7-4739-8992-d73b810fdc0c.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <button type="button" class="aprevious" class="rounded-circle"> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                            class="bi bi-chevron-left" viewBox="0 0 20 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg> </button>
+                                    <button type="button" class="anext" class="rounded-circle"> <b> <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                                class="bi bi-chevron-right" viewBox="0 0 20 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg> </b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End of Top Dishes section -->
+
+                <!-- Start of Restaurant section -->
+                <section class="aRestaurant mt-4">
+                    <p id="aTastPar">Restaurants <span style="font-size:medium;">( 96 )</span> </p>
+                    <div class="container aResDiv ">
+                        <div class="row ">
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12 mt-5">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12 mt-5">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12 mt-5">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12 mt-5">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12 mt-5">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12 mt-5">
+                                <div class="aContentCard">
+                                    <a href="#" class="aLinkCard">
+                                        <div class="card aD">
+                                            <figure class="aFigRes position-relative">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/11f6836e-26a0-4a7a-ab99-5f99c025a67c.jpg"
+                                                    class="aImg card-img-top" alt="...">
+                                                <div class="aSliderImgCrd d-flex justify-content-end "><i
+                                                        class="align-self-center fas fa-chevron-right "
+                                                        style="margin-bottom: 40px;"></i></div>
+                                                <figcaption class="aImgCaption">
+                                                    <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body aCardBody">
+                                                <div>
+                                                    <div class=" d-flex bd-highlight flex-row align-items-start">
+                                                        <img id="aImgRes"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/fce4e598-a3a8-11e8-b2ca-0242ac110002.jpg"
+                                                            alt="" class="rounded-3 me-3 ">
+                                                        <h3 id="aResName">Restaurant name
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star flex-fill"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <i style="color: gold; font-size: 12px;"
+                                                                class="fas fa-star"></i>
+                                                            <span id="aResType">Type of this Restaurant</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <div class="alert-success aDisAlert" role="alert">
+                                                        % 10 EGP on orders above 50 EGP
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div style="margin-top: -10px; width:100%;" class="d-flex flex-wrap ">
+                                                    <div>
+                                                        <i style="color: gray; flex-basis: 10px;"
+                                                            class="fas fa-motorcycle">60 mins&nbsp; </i>
+
+                                                    </div>
+                                                    <div>
+                                                        <i style="font-size: smaller; flex-basis: 1000%; color: #4caf50;"
+                                                            class="fas fa-circle">Order online&nbsp;</i>
+                                                    </div>
+
+                                                    <div>
+                                                        <i style="color: #f7b500; flex-basis: 20%;"
+                                                            class="fas fa-street-view"> on tracking</i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Restaurant section -->
+
+                        <!-- "Load more" button -->
+                        <div class="mt-5 mb-5 d-grid gap-1">
+                            <button class="btn aLoadButton" type="button">LOAD MORE RESTAURANTS</button>
+                        </div>
+
+
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-12 footer-images">
+                    <div class="mb-3 mt-2">
+                        <a href=""><img src="../images/newLogo.svg" class="img1"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/get-gplay.png"></a>
+                        <a href="">
+                            <img src="../images/get-appstore.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-12">
+                    <h4>Cities</h4>
+                    <ul class="list-items">
+                        <li><a href="">Cairo</a></li>
+                        <li><a href="">Alexandria</a></li>
+                        <li><a href="">North Coat</a></li>
+                        <li><a href="">El Mansoura</a></li>
+                        <li><a href="">sharm Elshikh</a></li>
+                        <li><a href="">Damiata</a></li>
+                        <li><a href="">Suez</a></li>
+                        <li><a href="">Hurdga</a></li>
+                        <li><a href="">Tanta</a></li>
+                        <li><a href="">Port Said</a></li>
+                        <li><a href="">Ismailia</a></li>
+                        <li><a href="">Dhab</a></li>
+                        <li><a href="">Alfayom</a></li>
+                        <li><a href="">Minia</a></li>
+                        <li><a href="">Benha</a></li>
+                    </ul>
+                </div>
+                <div class=" col-xl-4 col-lg-12">
+                    <h4>Areas</h4>
+                    <ul class="list-items">
+                        <li><a href="">El helwa street</a></li>
+                        <li><a href="">Segra</a></li>
+                        <li><a href="">El Morashaha</a></li>
+                        <li><a href="">El Nahas</a></li>
+                        <li><a href="">El Salakhana</a></li>
+                        <li><a href="">El Tagneed</a></li>
+                        <li><a href="">El Sayed El Badwia</a></li>
+                        <li><a href="">Saeed St.</a></li>
+                        <li><a href="">El Egezy</a></li>
+                        <li><a href="">Sekket El Mahala</a></li>
+                        <li><a href="">El Modereya</a></li>
+                        <li><a href="">Kafr Essam</a></li>
+                        <li><a href="">Stadium</a></li>
+                        <li><a href="">Cairo</a></li>
+                        <li><a href="">El Fateh St.</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-12">
+                    <h4>Dishes</h4>
+                    <ul class="list-items">
+                        <li><a href="">pizza</a></li>
+                        <li><a href="">Fried Chicken</a></li>
+                        <li><a href="">Shawerma</a></li>
+                        <li><a href="">pasta</a></li>
+                        <li><a href="">Grilled Chicken</a></li>
+                        <li><a href="">Burgers</a></li>
+                        <li><a href="">Grills</a></li>
+                        <li><a href="">Seafood</a></li>
+                        <li><a href="">Sandwiches</a></li>
+                        <li><a href="">Kashary</a></li>
+                        <li><a href="">Fries</a></li>
+                        <li><a href="">Sushi</a></li>
+                        <li><a href="">Noodles</a></li>
+                        <li><a href="">juices</a></li>
+                        <li><a href="">Crepe</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_footer">
+                <div class="row">
+                    <div class="col-xl-2 social">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-8 more-links">
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Terms and Conditions</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Join us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 copyright mt-1">
+                        © 2021 elmenus
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>
