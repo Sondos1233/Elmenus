@@ -1,0 +1,325 @@
+*{
+    font-family:Gilroy, "Open Sans", sans-serif;
+}
+
+body{
+    /* height: 2000px; */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+/* START OF SEARCH AREA STYLING */
+#searchBarArea .row{
+    width: 100%;
+}
+
+#searchBarArea .navbar{
+    height: 70px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid rgb(226, 226, 226);
+    
+}
+
+#searchBarArea .d-flex{
+    box-shadow:0 0 5px 1px rgba(2,2,2,0.2);
+    margin-right: 20px;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    
+    
+}
+
+#searchBarArea .d-flex span{
+    background-color: white;
+    margin-left: -8px;
+}
+
+#searchBarArea .d-flex span i{
+    color:lightgrey;
+    font-size: larger;
+    line-height: 36px;
+    margin-right: 20px;
+}
+
+
+#searchBarArea input{
+    width: 100%;
+    border:none;
+    
+}
+
+
+#searchBarArea .fa-map-marker-alt:before {
+    color: #e32207;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+#searchBarArea h4{
+    margin-right: 10px;
+    margin-bottom: 0;
+    line-height: 51px;
+    
+}
+
+#searchBarArea #city{
+    color: #e32207;
+}
+
+#searchBarArea .btn-outline-danger{
+    margin-bottom:10px;
+    font-size: 13px;
+}
+
+#searchBarArea .btn-outline-danger:hover{
+    color: #dc3545;
+    border-color: #dc3545;
+    background-color: #f8f9fa;
+}
+/* END OF SEARCH AREA STYLING */
+
+
+/* STATR OF PAGES PATH DIV STYLING */
+#pagesPath{
+    background-color: white;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+#pagesPath span{
+    margin-right: 5px;
+    font-size: 14px;
+    color: #e32207;
+    font-weight:600;
+}
+
+#pagesPath span:nth-child(4){
+    color: rgb(63, 63, 63);
+}
+
+hr{
+    padding: 0;
+    margin:0;
+}
+/* END OF PAGES PATH DIV STYLING */
+
+/* START OF TODELIVERY DIV STYLING */
+#toDelivery{
+    height: 75px;
+    background:url(../images/Offers-images/BG-Pattern.png)repeat-x;
+    
+}
+
+#toDelivery h3{
+    margin-left:3%;
+    font-size: 25px;
+    line-height: 75px;
+    color:rgb(63, 63, 63);
+}
+#toDelivery i{
+    color: #e32207;
+    margin-right: 10px;
+}
+/* END OF TODELIVERY DIV STYLING */
+
+/* START OF OFFERS CARD STYLING */
+#wholeCard:hover .card-body,
+#wholeCard:hover,
+#wholeCard:hover #upperPart img{
+    opacity: 0.8;
+    transition: 0.4s ease-out;
+    
+}
+
+#cardsSection{
+    margin-top: 25px;
+}
+
+#cardsSection a{
+    text-decoration: none;
+}
+
+#cardsSection .card{
+    border:none
+}
+
+#cardsSection .card-body{
+    padding:0;
+}
+
+#upperPart{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#restName {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+#upperPart img{
+    max-width: 45px;
+    max-height:45px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 1px lightgrey;
+    margin-right: 10px;
+    
+}
+
+#upperPart #restName h3{
+    font-size: 16px;
+    font-weight:bold;
+    color:rgb(56, 56, 56)
+}
+
+#upperPart #restName span{
+    display: block;
+    color:rgb(56, 56, 56)
+
+}
+
+#upperPart #rating{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#upperPart #rating span{
+   font-size: 12px;
+   color: lightslategray;
+   padding-bottom: 0;
+}
+
+#upperPart #rating #criditCardIcon i{
+    color: rgb(24, 182, 24);
+    font-size: 16px;
+
+
+}
+
+#midPart{
+    background-color: rgb(229, 250, 229);
+    padding:5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    color: rgb(16, 139, 16);
+    font-size: 12px;
+    
+}
+
+#midPart i{
+    font-size: 10px;
+    padding: 3px;
+    background-color:rgb(16, 139, 16);
+    color:rgb(229, 250, 229) ;
+    border: 2px dashed rgb(229, 250, 229);
+    border-radius: 50%;
+}
+
+#lowerPart{
+    display: flex;
+    justify-content:space-around ;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 15px;
+    border-top: 1px solid rgb(226, 227, 231);
+
+}
+
+#lowerPart i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+#lowerPart span{
+    margin-right: 5px;
+}
+
+#lowerPart span:nth-child(1){
+    color: rgb(116, 116, 116);
+}
+
+#lowerPart span:nth-child(2){
+    color: rgb(16, 139, 16);
+}
+
+#lowerPart span:nth-child(3){
+    color: rgb(255, 177, 51);
+}
+/* END OF OFFERS CARD STYLING */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 650px) { 
+    #searchBarArea .navbar {
+        position: relative;
+    }
+
+     #toDelivery h3{
+        margin-left:3%;
+        font-size: 25px;
+        line-height: 35px;
+        color:rgb(63, 63, 63);
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 652px) { 
+    #searchBarArea{
+        margin-bottom: 120px;
+    }
+
+
+
+   
+    
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1000px) { 
+    #searchBarArea{
+        margin-bottom: 70px;
+    }
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
+/* Media Queriey for md screen */
