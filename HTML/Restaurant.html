@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awesom cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/Restaurant.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/footer-style.css" />
+    <link rel="stylesheet" href="../css/footer_tablet.css"
+        media="screen and (min-width: 501px) and (max-width: 1200px)" />
+    <link rel="stylesheet" href="../css/footer_smartphone.css" media="screen and (max-width: 500px)" />
+    <title>elmenus</title>
+    <link rel="icon" href="../images/logo.png">
+</head>
+
+<body>
+    <!--start of website tree-->
+    <div class="aRootDiv">
+        <a class="aRootWords" style="text-decoration-line: none;" href="../index.html">Home</a>
+        <a class="aRootWords" style="text-decoration-line: none;" href="#">/ Cairo</a>
+        <a class="aRootWords" style="text-decoration-line: none;" href="#"> / Haram / </a> <span
+            style="font-size: 14px; color: #333333;"> Restaurants' Area</span>
+    </div>
+    <!--End of website tree-->
+
+    <!--start of Image cover-->
+    <div class="aDivImgCover">
+        <img class="aImgCover" src="https://www.elmenus.com/public/img/default-cover.png" alt="">
+        <div>
+            <div class="aDivPromo">
+                <h3>
+                    30 EGP on orders above 120 EGP
+                </h3>
+                <h5>
+                    Discounts on orders above 120 EGP Expires: in a month
+                </h5>
+                <div class="ms-3 aPromoActivation">
+                    <span class=" p-1"> Code </span>
+                    <button class="btn float-end"> Apply offer </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--End of Image cover-->
+
+    <!--start of Restaurant details-->
+    <div class="aRestDetDiv container-fluid">
+        <div class="row ">
+            <div class="aLeftDet position-relative col-8 d-flex flex-row mt-3">
+                <div class="aResImgDivL position-relative d-flex flex-column">
+                    <div class="aResImgL "> <img class="rounded-circle"
+                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/821bd584-51d2-4e28-ba37-e67525880221.jpg"
+                            alt=""> </div>
+                    <span class="aOpen p-1 ms-2 position-absolute"> Opens in 10 hours </span>
+                </div>
+                <div class="aResDetL">
+                    <div class="aResNameDiv">
+                        <h1 class="aResNameDiv">Restaurant Name</h1>
+                    </div>
+                    <div class="aSubtitle">
+                        <div class="d-flex">
+                            <div class="aTypeRes">
+                                Type of restaurant
+                            </div>
+                            <div class="aRateStars ms-2">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                                <div class="d-inline-block">
+                                    <span>
+                                        rate (#visitors)
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aResAddress d-flex mt-2">
+                            <span><i class="fas fa-map-marker-alt"></i>&nbsp;</span>
+                            <p>Restaurant address </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aRightDet col-4 d-flex justify-content-between mt-3">
+                <div style="width: 60%;">
+                </div>
+                <div class="aResAction mt-3">
+                    <a href="">
+                        <span class="aExampleSpan rounded-circle"><i class="fas fa-phone-alt aExampleAction"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Restaurant details-->
+
+    <hr style="width: 90%; margin: 5px auto; color: gray; border-bottom: 2px solid gray;">
+
+    <!--Start of taps row -->
+    <div class="container-fluid aTapsDiv mt-4">
+        <div class="row">
+            <div class="col-6">
+                <ul class="nav nav-pills mb-3 try" id="pills-tab" role="tablist">
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link  active aButton" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Menu</button>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <button class=" nav-link aButton " id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">About</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link aButton" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Branches</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link aButton" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Reviews</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <div class="d-flex flex-row justify-content-end">
+                    <div class="ms-3" style="width: fit-content">
+                        <span class="d-inline-block aIcont"><i class="fas fa-map-marker-alt"></i></span>
+                        <p class="d-inline-block aIcont">Live Tracking</p>
+                    </div>
+                    <div class="ms-3" style="width: fit-content">
+                        <span class="d-inline-block aIcond"><i class="fas fa-motorcycle"></i></span>
+                        <p class="d-inline-block aIcond">45 mins</p>
+                    </div>
+                    <div class="ms-3" style="width: fit-content">
+                        <span class="d-inline-block aIconw"><i class="fas fa-wallet"></i></span>
+                        <p class="d-inline-block aIconw">0 Egp</p>
+                    </div>
+                    <div class="ms-3" style="width: fit-content">
+                        <span class="d-inline-block aIconc"><i class="far fa-clock"></i></span>
+                        <p class="d-inline-block aIconc">02:00 PM - 01:30 AM</p>
+                    </div>
+                </div>
+            </div>
+            <!--End of taps row -->
+
+
+            <div class="tab-content" id="pills-tabContent">
+                <!--Start of Menu tap -->
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                    <div class="aScrollSpy">
+                        <div class="row">
+                            <div class="col-3">
+                                <div id="list-example" class="list-group sticky-top">
+                                    <a class="list-group-item  list-group-item-action active" href="#list-item-1">Pizza
+                                        <span class=" aRightIcon float-end "><i
+                                                class="fas fa-arrow-right"></i></span></a>
+                                    <a class="list-group-item list-group-item-action" href="#list-item-2">Alexandrian
+                                        hawawshi <span class="float-end aRightIcon"><i
+                                                class="fas fa-arrow-right"></i></span></a>
+                                    <a class="list-group-item list-group-item-action" href="#list-item-3">Savory
+                                        Feteer <span class="float-end aRightIcon"><i
+                                                class="fas fa-arrow-right"></i></span></a>
+                                    <a class="list-group-item list-group-item-action" href="#list-item-4">Feteer
+                                        Meshaltet <span class="float-end aRightIcon"><i
+                                                class="fas fa-arrow-right"></i></span></a>
+                                    <a class="list-group-item list-group-item-action" href="#list-item-5">Saroukh <span
+                                            class="float-end aRightIcon"><i class="fas fa-arrow-right"></i></span></a>
+                                    <a class="list-group-item list-group-item-action" href="#list-item-6">Fries <span
+                                            class="float-end aRightIcon"><i class="fas fa-arrow-right"></i></span></a>
+                                    <a class="list-group-item list-group-item-action" href="#list-item-7">Sweet
+                                        Feteer <span class="float-end aRightIcon"><i
+                                                class="fas fa-arrow-right"></i></span></a>
+                                </div>
+
+                            </div>
+                            <!-- Food -->
+
+                            <div class="col-6">
+                                <div class="vertical"></div>
+                                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0"
+                                    class="scrollspy-example ms-3" tabindex="0">
+
+                                    <!-- search -->
+                                    <div class="aSearchdiv d-flex mb-2 sticky-top">
+                                        <input style="width: 50%;" class="form-control me-2" type="search"
+                                            placeholder="Search for a Dish" aria-label="Search">
+                                        <a class="aLinkMenuScan" style="text-align: end; width: 50%;" href="#">View
+                                            Scanned Menu <i class="fas fa-caret-right"></i></a>
+                                    </div>
+
+                                    <div class="aItemsDiv ms-3">
+                                        <section>
+                                            <h4 id="list-item-1" class="aItem mt-4 mb-4">Pizza </h4>
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Vegetables </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/8a4a435e-74df-4a49-bf4e-15c73f1a08e6.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Vegetables </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/8a4a435e-74df-4a49-bf4e-15c73f1a08e6.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Vegetables </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/8a4a435e-74df-4a49-bf4e-15c73f1a08e6.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+
+                                        </section>
+                                        <section>
+                                            <h4 id="list-item-2" class="aItem mt-4 mb-4">Alexandrian hawawshi</h4>
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Vegetables </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/fe4d68b9-ac1f-4681-9000-e25b4aba56bd.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Vegetables </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/fe4d68b9-ac1f-4681-9000-e25b4aba56bd.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Vegetables </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/fe4d68b9-ac1f-4681-9000-e25b4aba56bd.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+                                        </section>
+                                        <section>
+                                            <h4 id="list-item-3" class="aItem">Savory Feteer</h4>
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Mozerella cheese </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/bf5870ca-ec53-4faf-a0ec-71771f357a42.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Vegetables </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/8a4a435e-74df-4a49-bf4e-15c73f1a08e6.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+                                            <section class="d-flex flex-column ">
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <h5 class="aDishType"> Vegetables </h5>
+                                                        <p class="aDishDet"> Mozzarella, pizza sauce, tomato, pepper,
+                                                            olives</p>
+                                                        <div>
+                                                            <span style="color: var(--first-color);"> <i
+                                                                    class="fas fa-plus-circle"></i> </span>
+                                                            <p class="d-inline-block aDishPrice"> 35 - 55 EGP</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-auto">
+                                                        <img class="rounded-3" style="width: 80%;"
+                                                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/8a4a435e-74df-4a49-bf4e-15c73f1a08e6.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <span style="color: #464748;"> count </span>
+                                                    <span class="aThumbIcon" style="color: #a9acae; "><i
+                                                            class="far fa-thumbs-up"></i></span>
+                                                </div>
+                                            </section>
+                                            <hr style="color: gray; margin-top: -2px;">
+                                        </section>
+                                        <h4 id="list-item-4" class="aItem">Feteer Meshaltet</h4>
+                                        <h4 id="list-item-5" class="aItem">Saroukh</h4>
+                                        <h4 id="list-item-6" class="aItem">Fries</h4>
+                                        <h4 id="list-item-7" class="aItem">Sweet Feteer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="aDeliverAddr">
+                                    <div class="d-flex flex-column">
+                                        <span class="aMotoIcon"><i class="fas fa-motorcycle"></i></span>
+                                        <p class="aDeliverto">
+                                            <span>Delivers to</span>
+                                            Corniche El Maadi Maadi
+                                        </p>
+                                        <button class="btn">
+                                            Change Address <i class="fas fa-arrow-right float-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--End of Menu tap -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-12 footer-images">
+                    <div class="mb-3 mt-2">
+                        <a href=""><img src="../images/newLogo.svg" class="img1"></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="../images/get-gplay.png"></a>
+                        <a href="">
+                            <img src="../images/get-appstore.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-12">
+                    <h4>Cities</h4>
+                    <ul class="list-items">
+                        <li><a href="">Cairo</a></li>
+                        <li><a href="">Alexandria</a></li>
+                        <li><a href="">North Coat</a></li>
+                        <li><a href="">El Mansoura</a></li>
+                        <li><a href="">sharm Elshikh</a></li>
+                        <li><a href="">Damiata</a></li>
+                        <li><a href="">Suez</a></li>
+                        <li><a href="">Hurdga</a></li>
+                        <li><a href="">Tanta</a></li>
+                        <li><a href="">Port Said</a></li>
+                        <li><a href="">Ismailia</a></li>
+                        <li><a href="">Dhab</a></li>
+                        <li><a href="">Alfayom</a></li>
+                        <li><a href="">Minia</a></li>
+                        <li><a href="">Benha</a></li>
+                    </ul>
+                </div>
+                <div class=" col-xl-4 col-lg-12">
+                    <h4>Areas</h4>
+                    <ul class="list-items">
+                        <li><a href="">El helwa street</a></li>
+                        <li><a href="">Segra</a></li>
+                        <li><a href="">El Morashaha</a></li>
+                        <li><a href="">El Nahas</a></li>
+                        <li><a href="">El Salakhana</a></li>
+                        <li><a href="">El Tagneed</a></li>
+                        <li><a href="">El Sayed El Badwia</a></li>
+                        <li><a href="">Saeed St.</a></li>
+                        <li><a href="">El Egezy</a></li>
+                        <li><a href="">Sekket El Mahala</a></li>
+                        <li><a href="">El Modereya</a></li>
+                        <li><a href="">Kafr Essam</a></li>
+                        <li><a href="">Stadium</a></li>
+                        <li><a href="">Cairo</a></li>
+                        <li><a href="">El Fateh St.</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-12">
+                    <h4>Dishes</h4>
+                    <ul class="list-items">
+                        <li><a href="">pizza</a></li>
+                        <li><a href="">Fried Chicken</a></li>
+                        <li><a href="">Shawerma</a></li>
+                        <li><a href="">pasta</a></li>
+                        <li><a href="">Grilled Chicken</a></li>
+                        <li><a href="">Burgers</a></li>
+                        <li><a href="">Grills</a></li>
+                        <li><a href="">Seafood</a></li>
+                        <li><a href="">Sandwiches</a></li>
+                        <li><a href="">Kashary</a></li>
+                        <li><a href="">Fries</a></li>
+                        <li><a href="">Sushi</a></li>
+                        <li><a href="">Noodles</a></li>
+                        <li><a href="">juices</a></li>
+                        <li><a href="">Crepe</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_footer">
+                <div class="row">
+                    <div class="col-xl-2 social">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-8 more-links">
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Terms and Conditions</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Join us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 copyright mt-1">
+                        © 2021 elmenus
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
