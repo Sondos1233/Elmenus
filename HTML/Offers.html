@@ -1,74 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontawesome cnd -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Roboto Web Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap CDN Library $ Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+        integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Footer styles -->
     <link rel="stylesheet" href="../css/footer-style.css" />
-    <link
-      rel="stylesheet"
-      href="../css/footer_tablet.css"
-      media="screen and (min-width: 501px) and (max-width: 1200px)"
-    />
-    <link
-      rel="stylesheet"
-      href="../css/footer_smartphone.css"
-      media="screen and (max-width: 500px)"
-    />
+    <link rel="stylesheet" href="../css/footer_tablet.css"
+        media="screen and (min-width: 501px) and (max-width: 1200px)" />
+    <link rel="stylesheet" href="../css/footer_smartphone.css" media="screen and (max-width: 500px)" />
     <!-- Main css for the whole roject -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- css for Offers page only  -->
     <link rel="stylesheet" href="../css/Offers.css">
+    <link rel="stylesheet" href="../css/home.css">
     <!-- Browser Tab Icon -->
     <link rel="Browser Tab icon" href="https://s3.amazonaws.com/startuplist.africa/startups/elmenus/elmenus-logo.png">
     <title>Offers</title>
     <link rel="icon" href="/images/logo.png">
+    <link rel="stylesheet" href="../css/dineOut.css">
 </head>
-<body>
-    <!-- Start Of Search Bar Section Markup -->
-    <section id="searchBarArea">
-        <nav class="navbar navbar-light bg-light h-auto fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-12">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Find a Restaurant" aria-label="Search">
-                            <span><i class="fas fa-search"></i></span>
-                        </form>
-                    </div>
-                    <div class="col-lg-5 col-12 text-lg-start text-sm-center">
-                        <span><i class="fa fa-map-marker-alt"></i></span>
-                        <h4 id="deliver" class="d-inline-block"> Deliver</h4>
-                        <h4 id="city" class="d-inline-block">Selected-City</h4>
-                        <button class="btn btn-outline-danger">CHANGE</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </section>
-    <!-- End Of Search Bar Section Markup -->
 
-    <!-- Start Of Page Path Section Markup -->
-    <section id="pagesPath">
-        <div>
-            <span>Home /</span>
-            <span> Cairo /</span>
-            <span> NasrCity /</span>
-            <span> SeragMall</span>
+<body>
+    <nav class="nav-sm-Screen d-sm-block d-lg-none" id="pageNav-sm" style="background-color: var(--first-color) ;">
+    </nav>
+
+    <nav class="nav-lg-Screen sticky-top d-lg-block d-none" id="pageNav-lg">
+
+
+    </nav>
+    <section aria-label="breadcrumb" class="container-fluid d-lg-block d-none"
+        style="border-bottom: 1px solid var(--border-color);">
+        <div class="row" style="margin: 0 120px;">
+            <div class="col-12 pt-2">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">cairo</a></li>
+                    <li class="breadcrumb-item"><a href="#">maadi</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">new maadi</li>
+                </ol>
+            </div>
         </div>
     </section>
-    <hr>
-    <!-- End Of Page Path Section Markup -->
 
     <!-- Start Of ToDelivery Section Markup -->
     <section id="toDelivery">
@@ -76,14 +65,14 @@
             <h3>
                 <a href="./Delivery.html"><i class="fa fa-chevron-left"></i></a>
                 Best Delivery Offers & Discounts in
-                 <span>NasrCity</span>
+                <span>NasrCity</span>
             </h3>
         </div>
     </section>
     <hr>
     <!-- End Of ToDelivery Section Markup -->
 
-       
+
     <!-- Start Of Offers Cards Section Markup -->
     <section id="cardsSection">
         <div class="container-lg">
@@ -91,10 +80,12 @@
                 <div class="col" id="wholeCard">
                     <a href="#">
                         <div class="card h-100">
-                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg"
+                                class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div id="upperPart">
-                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg" alt="" srcset="">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg"
+                                        alt="" srcset="">
                                     <div id="restName">
                                         <h3>Restaurant Name</h3>
                                         <span>Egyprian.Food</span>
@@ -108,7 +99,7 @@
                                             <i class="far fa-star"></i>
                                             <span>(316)</span>
                                         </span>
-                                        
+
                                         <span id="criditCardIcon"><i class="fa fa-credit-card"></i></span>
                                     </div>
                                 </div>
@@ -128,10 +119,12 @@
                 <div class="col" id="wholeCard">
                     <a href="#">
                         <div class="card h-100">
-                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg"
+                                class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div id="upperPart">
-                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg" alt="" srcset="">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg"
+                                        alt="" srcset="">
                                     <div id="restName">
                                         <h3>Restaurant Name</h3>
                                         <span>Egyprian.Food</span>
@@ -145,7 +138,7 @@
                                             <i class="far fa-star"></i>
                                             <span>(316)</span>
                                         </span>
-                                        
+
                                         <span id="criditCardIcon"><i class="fa fa-credit-card"></i></span>
                                     </div>
                                 </div>
@@ -165,10 +158,12 @@
                 <div class="col" id="wholeCard">
                     <a href="#">
                         <div class="card h-100">
-                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg"
+                                class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div id="upperPart">
-                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg" alt="" srcset="">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg"
+                                        alt="" srcset="">
                                     <div id="restName">
                                         <h3>Restaurant Name</h3>
                                         <span>Egyprian.Food</span>
@@ -182,7 +177,7 @@
                                             <i class="far fa-star"></i>
                                             <span>(316)</span>
                                         </span>
-                                        
+
                                         <span id="criditCardIcon"><i class="fa fa-credit-card"></i></span>
                                     </div>
                                 </div>
@@ -202,10 +197,12 @@
                 <div class="col" id="wholeCard">
                     <a href="#">
                         <div class="card h-100">
-                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg"
+                                class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div id="upperPart">
-                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg" alt="" srcset="">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg"
+                                        alt="" srcset="">
                                     <div id="restName">
                                         <h3>Restaurant Name</h3>
                                         <span>Egyprian.Food</span>
@@ -219,7 +216,7 @@
                                             <i class="far fa-star"></i>
                                             <span>(316)</span>
                                         </span>
-                                        
+
                                         <span id="criditCardIcon"><i class="fa fa-credit-card"></i></span>
                                     </div>
                                 </div>
@@ -239,10 +236,12 @@
                 <div class="col" id="wholeCard">
                     <a href="#">
                         <div class="card h-100">
-                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg"
+                                class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div id="upperPart">
-                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg" alt="" srcset="">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg"
+                                        alt="" srcset="">
                                     <div id="restName">
                                         <h3>Restaurant Name</h3>
                                         <span>Egyprian.Food</span>
@@ -256,7 +255,7 @@
                                             <i class="far fa-star"></i>
                                             <span>(316)</span>
                                         </span>
-                                        
+
                                         <span id="criditCardIcon"><i class="fa fa-credit-card"></i></span>
                                     </div>
                                 </div>
@@ -276,10 +275,12 @@
                 <div class="col" id="wholeCard">
                     <a href="#">
                         <div class="card h-100">
-                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/9b148a80-c4fa-4606-9293-e3cae4e2990e.jpg"
+                                class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div id="upperPart">
-                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg" alt="" srcset="">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/f352d864-b63c-482a-b584-58bda87affca.jpg"
+                                        alt="" srcset="">
                                     <div id="restName">
                                         <h3>Restaurant Name</h3>
                                         <span>Egyprian.Food</span>
@@ -293,7 +294,7 @@
                                             <i class="far fa-star"></i>
                                             <span>(316)</span>
                                         </span>
-                                        
+
                                         <span id="criditCardIcon"><i class="fa fa-credit-card"></i></span>
                                     </div>
                                 </div>
@@ -310,112 +311,112 @@
                         </div>
                     </a>
                 </div>
-    
+
             </div>
         </div>
         <!-- FOOOTTRRTTR -->
         <footer class="main_footer">
             <div class="container">
-              <div class="row">
-                <div class="col-xl-2 col-lg-12 footer-images">
-                  <div class="mb-3 mt-2">
-                    <a href=""><img src="/images/newLogo.svg" class="img1"></a>
-                  </div>
-                  <div>
-                    <a href="" ><img src="/images/get-gplay.png" ></a>
-                    <a href="" >
-                      <img src="/images/get-appstore.png" >
-                    </a>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-12">
-                  <h4>Cities</h4>
-                  <ul class="list-items">
-                    <li><a href="">Cairo</a></li>
-                    <li><a href="">Alexandria</a></li>
-                    <li><a href="">North Coat</a></li>
-                    <li><a href="">El Mansoura</a></li>
-                    <li><a href="">sharm Elshikh</a></li>
-                    <li><a href="">Damiata</a></li>
-                    <li><a href="">Suez</a></li>
-                    <li><a href="">Hurdga</a></li>
-                    <li><a href="">Tanta</a></li>
-                    <li><a href="">Port Said</a></li>
-                    <li><a href="">Ismailia</a></li>
-                    <li><a href="">Dhab</a></li>
-                    <li><a href="">Alfayom</a></li>
-                    <li><a href="">Minia</a></li>
-                    <li><a href="">Benha</a></li>
-                  </ul>
-                </div>
-                <div class=" col-xl-4 col-lg-12">
-                  <h4>Areas</h4>
-                  <ul class="list-items">
-                    <li><a href="">El helwa street</a></li>
-                    <li><a href="">Segra</a></li>
-                    <li><a href="">El Morashaha</a></li>
-                    <li><a href="">El Nahas</a></li>
-                    <li><a href="">El Salakhana</a></li>
-                    <li><a href="">El Tagneed</a></li>
-                    <li><a href="">El Sayed El Badwia</a></li>
-                    <li><a href="">Saeed St.</a></li>
-                    <li><a href="">El Egezy</a></li>
-                    <li><a href="">Sekket El Mahala</a></li>
-                    <li><a href="">El Modereya</a></li>
-                    <li><a href="">Kafr Essam</a></li>
-                    <li><a href="">Stadium</a></li>
-                    <li><a href="">Cairo</a></li>
-                    <li><a href="">El Fateh St.</a></li>
-                  </ul>
-                </div>
-                <div class="col-xl-3 col-lg-12">
-                  <h4>Dishes</h4>
-                  <ul class="list-items">
-                    <li><a href="">pizza</a></li>
-                    <li><a href="">Fried Chicken</a></li>
-                    <li><a href="">Shawerma</a></li>
-                    <li><a href="">pasta</a></li>
-                    <li><a href="">Grilled Chicken</a></li>
-                    <li><a href="">Burgers</a></li>
-                    <li><a href="">Grills</a></li>
-                    <li><a href="">Seafood</a></li>
-                    <li><a href="">Sandwiches</a></li>
-                    <li><a href="">Kashary</a></li>
-                    <li><a href="">Fries</a></li>
-                    <li><a href="">Sushi</a></li>
-                    <li><a href="">Noodles</a></li>
-                    <li><a href="">juices</a></li>
-                    <li><a href="">Crepe</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer_footer">
                 <div class="row">
-                  <div class="col-xl-2 social">
-                    <ul>
-                      <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                      <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                      <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                  </div>
-                  <div class="col-xl-8 more-links">
-                    <ul>
-                      <li><a href="">About Us</a></li>
-                      <li><a href="">Terms and Conditions</a></li>
-                      <li><a href="">Privacy</a></li>
-                      <li><a href="">Careers</a></li>
-                      <li><a href="">Join us</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-xl-2 copyright mt-1">
-                    © 2021 elmenus
-                  </div>
+                    <div class="col-xl-2 col-lg-12 footer-images">
+                        <div class="mb-3 mt-2">
+                            <a href=""><img src="/images/newLogo.svg" class="img1"></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="/images/get-gplay.png"></a>
+                            <a href="">
+                                <img src="/images/get-appstore.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-12">
+                        <h4>Cities</h4>
+                        <ul class="list-items">
+                            <li><a href="">Cairo</a></li>
+                            <li><a href="">Alexandria</a></li>
+                            <li><a href="">North Coat</a></li>
+                            <li><a href="">El Mansoura</a></li>
+                            <li><a href="">sharm Elshikh</a></li>
+                            <li><a href="">Damiata</a></li>
+                            <li><a href="">Suez</a></li>
+                            <li><a href="">Hurdga</a></li>
+                            <li><a href="">Tanta</a></li>
+                            <li><a href="">Port Said</a></li>
+                            <li><a href="">Ismailia</a></li>
+                            <li><a href="">Dhab</a></li>
+                            <li><a href="">Alfayom</a></li>
+                            <li><a href="">Minia</a></li>
+                            <li><a href="">Benha</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-xl-4 col-lg-12">
+                        <h4>Areas</h4>
+                        <ul class="list-items">
+                            <li><a href="">El helwa street</a></li>
+                            <li><a href="">Segra</a></li>
+                            <li><a href="">El Morashaha</a></li>
+                            <li><a href="">El Nahas</a></li>
+                            <li><a href="">El Salakhana</a></li>
+                            <li><a href="">El Tagneed</a></li>
+                            <li><a href="">El Sayed El Badwia</a></li>
+                            <li><a href="">Saeed St.</a></li>
+                            <li><a href="">El Egezy</a></li>
+                            <li><a href="">Sekket El Mahala</a></li>
+                            <li><a href="">El Modereya</a></li>
+                            <li><a href="">Kafr Essam</a></li>
+                            <li><a href="">Stadium</a></li>
+                            <li><a href="">Cairo</a></li>
+                            <li><a href="">El Fateh St.</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-12">
+                        <h4>Dishes</h4>
+                        <ul class="list-items">
+                            <li><a href="">pizza</a></li>
+                            <li><a href="">Fried Chicken</a></li>
+                            <li><a href="">Shawerma</a></li>
+                            <li><a href="">pasta</a></li>
+                            <li><a href="">Grilled Chicken</a></li>
+                            <li><a href="">Burgers</a></li>
+                            <li><a href="">Grills</a></li>
+                            <li><a href="">Seafood</a></li>
+                            <li><a href="">Sandwiches</a></li>
+                            <li><a href="">Kashary</a></li>
+                            <li><a href="">Fries</a></li>
+                            <li><a href="">Sushi</a></li>
+                            <li><a href="">Noodles</a></li>
+                            <li><a href="">juices</a></li>
+                            <li><a href="">Crepe</a></li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-              
+                <div class="footer_footer">
+                    <div class="row">
+                        <div class="col-xl-2 social">
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-8 more-links">
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                                <li><a href="">Privacy</a></li>
+                                <li><a href="./HTML/Careers.html">Careers</a></li>
+                                <li><a href="./HTML/JoinUs.html">Join us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 copyright mt-1">
+                            © 2021 elmenus
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </footer>
+        </footer>
     </section>
     <!-- End Of Offers Cards Section Markup -->
 
@@ -435,7 +436,105 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../jquery.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
 
+    <script>
+        $('#pageNav-lg').load('nav-lg-Screen.html');
+        $('#pageNav-sm').load('nav-sm-Screen.html');
+    </script>
+    <!--=========================SignUp Modals========================== -->
+
+<div class="modal fade" id="SignModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="title">
+            <img src="/images/logo.png">
+            <p class="mt-1 ms-lg-2">elmenus</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex">
+          <form id="sign" action="#" style="margin-top: 20px;">
+            <div class="user-details">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="button mt-3">
+               <input type="submit" value="Create An Account" class="btn btn-danger">
+            </div>
+            <div class="Privacy-policy">
+                <p>By creating an account, you agree to our Terms of service and Privacy policy</p>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--=========================LogIn Modals========================== -->
+  
+  <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="title">
+            <img src="images/logo.png">
+            <p class="mt-1 ms-lg-2">elmenus</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex">
+          <form id="log" action="#" style="margin-top: 20px;">
+            <div class="user-details">
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="button mt-3">
+               <input type="submit" value="Log In" class="btn btn-danger" >
+            </div>
+            <div class="button mt-3">
+              <input type="submit" value="LogIn with Facebook" class="btn " style="background-color: #4267b2; color: white;">
+           </div>
+           <div class="button mt-3">
+            <input type="submit" value="LogIn with Google" class="btn " style="background-color: #4285f4; color: white;">
+            </div>
+            <div class="ForgotPass">
+              <p><a href="#" style="font-size: 11px; font-weight: bold; text-decoration: none; color: #e32207;">I forgot my password</a></p>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
 </body>
+
 </html>

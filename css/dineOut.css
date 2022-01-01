@@ -15,11 +15,11 @@ a{
     margin: 0 2px
     /* background-color: var(--first-color); */
 }
-.navbar-nav .active
+/*.navbar-nav .active
 {
     background-color: var(--first-color);
     color: white !important;
-}
+}*/
 .navbar-nav .nav-link:hover
 {
     color: white !important;
