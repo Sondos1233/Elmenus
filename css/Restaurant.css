@@ -1,0 +1,313 @@
+.aRootDiv {
+  background: linear-gradient(180deg, #fff, #f9f8f8);
+  border: 1px solid #dfe2e6;
+  padding: 10px 100px;
+  border-radius: 0;
+  border: 1px solid #dfe2e6;
+}
+
+.aRootWords {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--first-color);
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.aDivImgCover {
+  overflow: hidden;
+  max-height: 220px;
+  position: relative;
+}
+.aDivImgCover .aImgCover {
+  width: 100%;
+}
+.aDivImgCover .aDivPromo {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 4%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #9797973b;
+}
+.aDivImgCover .aDivPromo h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.aDivImgCover .aDivPromo h5 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #6c6d6e;
+  margin: 10px 0;
+}
+.aDivImgCover .aDivPromo .aPromoActivation {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: black;
+  padding: 8px 13px;
+  margin-top: 15px;
+}
+.aDivImgCover .aDivPromo .aPromoActivation span {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0;
+  color: black;
+}
+.aDivImgCover .aDivPromo .aPromoActivation button {
+  color: #4caf50;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.aRestDetDiv {
+  width: 90%;
+}
+.aRestDetDiv .aResImgDivL {
+  top: -50px;
+  width: 20%;
+}
+.aRestDetDiv .aResImgDivL .aOpen {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #e32207;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: 0;
+  bottom: 0;
+}
+.aRestDetDiv .aResDetL {
+  width: 80%;
+}
+.aRestDetDiv .aResDetL .aResNameDiv {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 39px;
+  color: #333333;
+}
+.aRestDetDiv .aSubtitle .aTypeRes {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.aRestDetDiv .aSubtitle .aRateStars {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #e2c000;
+}
+.aRestDetDiv .aSubtitle .aResAddress {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  color: black;
+}
+
+.aRightDet .aResAction {
+  width: 40%;
+}
+.aRightDet .aResAction .aExampleSpan {
+  display: inline-block;
+  width: 30%;
+  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.1);
+}
+.aRightDet .aResAction .aExampleSpan .aExampleAction {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--first-color);
+  padding-left: 10px;
+}
+
+.aTapsDiv {
+  width: 93%;
+}
+.aTapsDiv a {
+  text-decoration-line: none;
+}
+.aTapsDiv .try .active {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  color: white;
+  border-radius: 15px;
+  border: 0;
+  background-color: var(--first-color) !important;
+}
+.aTapsDiv .try button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  color: gray;
+  border-radius: 15px;
+  border: 0;
+}
+.aTapsDiv .try button:hover {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  color: gray;
+  background-color: lightgray;
+  border-radius: 15px;
+  border: 0;
+}
+.aTapsDiv .aIcont, .aTapsDiv .aIcond, .aTapsDiv .aIconw, .aTapsDiv .aIconc {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #f7b500;
+}
+.aTapsDiv .aIcond, .aTapsDiv .aIconw, .aTapsDiv .aIconc {
+  color: #8d8f91;
+}
+.aTapsDiv .aScrollSpy {
+  width: 100%;
+  /*.list-group-item-action:focus{
+      @include mixins.font(16px,400,23px,white);
+      @include mixins.border(12px!important,0 !important);
+      @include mixins.backgrounds(var(--first-color !important));
+      .aRightIcon{
+          display: inline-block;
+      }
+  }*/
+}
+.aTapsDiv .aScrollSpy .list-group-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #7b7d7f;
+  border-radius: 0 !important;
+  border: 0 !important;
+  transition-property: all;
+  transition-duration: 0.5s;
+  border-bottom: 1px solid #f0f4f7 !important;
+}
+.aTapsDiv .aScrollSpy .aRightIcon {
+  display: none;
+}
+.aTapsDiv .aScrollSpy .list-group-item:hover {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: white;
+  border-radius: 12px !important;
+  border: 0 !important;
+  background-color: var(--first-color);
+}
+.aTapsDiv .aScrollSpy .list-group-item:hover .aRightIcon {
+  display: inline-block;
+}
+.aTapsDiv .aScrollSpy .list-group .active {
+  background-color: var(--first-color) !important;
+  border-radius: 12px !important;
+  border: 0 !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: white;
+}
+.aTapsDiv .aScrollSpy .list-group .active .aRightIcon {
+  display: inline-block;
+}
+.aTapsDiv .aScrollSpy ::placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20;
+  color: #7b7d7f;
+}
+.aTapsDiv .aScrollSpy .aLinkMenuScan {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 43px;
+  color: var(--first-color);
+  text-decoration: underline;
+}
+.aTapsDiv .aScrollSpy .aItem {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 31px;
+  color: #2a2b2c;
+}
+
+.vertical {
+  border-left: 1px solid #d8d8d8;
+  height: 100%;
+  position: absolute;
+}
+
+.aDishType {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #2a2b2c;
+}
+
+.aDishDet {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #a9acae;
+}
+
+.aDishPrice {
+  font-size: 15px;
+  font-weight: 1000;
+  line-height: 1.3;
+  color: var(--first-color);
+}
+
+.aThumbIcon {
+  cursor: pointer;
+}
+
+.aThumbIcon:focus {
+  color: #464748;
+}
+
+.aDeliverAddr {
+  background-color: #FEF6F5;
+  border-radius: 12px;
+  border: 0;
+  padding: 15px;
+}
+.aDeliverAddr .aMotoIcon {
+  color: #E32207;
+  font-size: 30px;
+}
+.aDeliverAddr .aDeliverto span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #7a7a7a;
+}
+.aDeliverAddr .aDeliverto {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--first-color);
+}
+.aDeliverAddr button {
+  background-color: white;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=Restaurant.css.map */
