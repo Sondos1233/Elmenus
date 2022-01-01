@@ -340,6 +340,9 @@ form .input-box input:valid{
 }
 
 /* LogIn Modal styling */
+#LogInModal , #SignModal{
+    margin-top: 100px;
+}
 
 #log .input-box input{
     width: 220%;

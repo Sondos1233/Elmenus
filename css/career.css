@@ -1,0 +1,137 @@
+body{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+}
+nav i.social{
+    color: var(--bt-color);
+}
+nav i.social:hover{
+    color: var(--bt-hover);
+}
+.main{
+    height: 500px;
+    background-image: url(../images/staff.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.main-second{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #222933;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+.info{
+   height: 400px;
+   position: relative;
+   top: 200px;
+   
+  
+
+}
+.info h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.info h3{
+    font-size: 22px;
+    line-height: 1.4;
+}
+.body-content{
+    border-bottom: 1px solid #e6f0f6;
+    position: relative;
+
+}
+.body-content .section1{
+    border-bottom: 1px solid #e6f0f6;
+    padding: 100px 0 50px;
+}
+
+.body-content h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: #404b58;
+}
+.body-content p{
+    color: #5c6f78;
+    font-size: 18px;
+}
+.body-content h6{
+    font-size: 16px;
+    color: #8aa2ad;
+    font-weight: 600;
+   
+}
+.body-content h5{
+    font-size: 24px;
+    margin-top: 45px;
+    color: #5c6f78;
+}
+.view-jobs .group h6{
+    color: #2a333d;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.view-jobs .group span{
+    color: var( --bt-color);
+}
+.view-jobs .group mark{
+    color: var( --bt-color);
+    background: #e6f0f6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    
+}
+.view-jobs .group .apply{
+    text-align: right;
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--bt-color);
+    border-color: var(--bt-color);
+}
+.btn-primary:hover{
+    background-color: var(--bt-hover);
+    border-color: var(--bt-hover);
+}
+.bg{
+    height: 20px;
+    background-image: url(../images/staff.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.bg2{
+    
+    top:0;
+    left: 0;
+    background-color: #222933;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+
+}
+footer{
+    margin-top: 100px;
+}
+footer a{
+    text-decoration: none;
+    color:#5c6f78;
+    
+}
+footer a:hover{
+    color:#5c6f78;
+    opacity: .7;
+}
+footer img{
+    width: 160px;
+}
