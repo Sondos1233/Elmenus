@@ -38,6 +38,7 @@ async function AddRes(){
     let ResData = {
         ResName: ResName,
         Phone:phone,
+        IsAccepted:false
     }
     let anotherResData = {
         LocName:city,
@@ -46,4 +47,5 @@ async function AddRes(){
     const Restaurant = await addDoc(collection(firestore,"Restaurant"),ResData);
     //console.log(Restaurant.id)
     const aRes = await addDoc(collection(firestore,"Restaurant",Restaurant.id,"Branches"),anotherResData);
+    alert("We will contact with you soon ");
 }
