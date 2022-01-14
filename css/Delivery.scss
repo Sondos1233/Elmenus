@@ -127,7 +127,7 @@
   @include mixins.backgrounds(var(--first-color));
   @include mixins.border(0, 0px solid white);
   box-shadow: 0px 2px 4px rgba(0, 0, 0);
-  top: 40%;
+  top: 60%;
 }
 #next {
   width: 35px;
