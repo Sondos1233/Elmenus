@@ -2,10 +2,18 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
 import {
   getFirestore,
-  getDocs,getDoc,
-  collection,doc
-  ,limit,query
+  getDocs,
+  getDoc,
+  collection,
+  doc,
+  limit,
+  query,
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
+import {
+  getStorage,
+  ref,
+  getDownloadURL
+} from "https://www.gstatic.com/firebasejs/9.6.2/firebase-storage.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -17,54 +25,72 @@ const firebaseConfig = {
   storageBucket: "elmenusclone.appspot.com",
   messagingSenderId: "57271621220",
   appId: "1:57271621220:web:ba8d19b9fddb0988db7171",
+  storageBucket: "gs://elmenusclone.appspot.com/",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
+const storage = getStorage(app);
+const storageRef = ref(storage);
 
 
 //offer div
-let counter = 0
 
-getDocs(collection(firestore,"Restaurant")).then((snapshot)=>{
-    snapshot.forEach((doc2)=>{
-        getDocs(collection(firestore,"Restaurant",doc2.id,"Offers")).then((bla)=>{
-            bla.forEach((doc) => {
-                console.log(doc.data().Description)
-                if(doc.data().Description){
-                    document.getElementById("aOfferCardsrow").innerHTML+= `<div class="col-lg-3 col-md-4 position-relative aproductDiv">
-                             <a class="aLinkCard" href="./Restaurant.html">
-                                 <figure class="aFigRes">
-                                     <img src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/12e76025-a7d8-4a6b-b0be-67b9b62e223e.jpg"
-                                         class="card-img-top aImgCard" alt="...">
-                                     <figcaption class="aImgCaption">
-                                         <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
-                                     </figcaption>
-                                 </figure>
-                                 <div class=" position-relative card-body aCardBody">
-         
-                                     <img id="aImgRes"
-                                         src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/8e900114-c911-4a9e-843d-a929b10c3073.jpg"
-                                         alt="" class="rounded-3 me-3 float-start">
-         
-                                     <h3 class="card-title " id="aResName">${doc2.data().ResName}</h3>
-                                     <div class="mt-3">
-                                         <div class="alert-success aDisAlert aDisAlertof" role="alert">
-                                             ${doc.data().Description}
-                                         </div>
-                                     </div>
-                                 </div>
-                             </a>
-                         </div>`
-                    //document.getElementsByClassName("aDisAlertof")[counter].innerHTML= `${doc.data().Description}`
-                counter++;
-                }
-              console.log(`${doc.id} => ${doc.data().Description}`);
-            });
-        })       
-    })
-})
+getDocs(collection(firestore, "Restaurant")).then((snapshot) => {
+  snapshot.forEach((doc2) => {
+    if (doc2.data().IsAccepted == undefined || doc2.data().IsAccepted == true) {
+      //console.log(doc2.data().IsAccepted)
+      getDocs(collection(firestore, "Restaurant", doc2.id, "Offers")).then(
+        (bla) => {
+          bla.forEach((doc) => {
+            //console.log(doc.data().Description)
+            if (doc.data().Description) {
+                getDownloadURL(ref(storage, `ResImges/${doc2.data().ResName}/Logo_${doc2.data().ResName}.jpg`)).then((url1) => {
+                    getDownloadURL(ref(storage, `ResImges/${doc2.data().ResName}/Atract_${doc2.data().ResName}.jpg`)).then((url2) => {
+
+                        /*const img = document.getElementById("myimg");
+                        img.setAttribute("src", url);*/
+                        document.getElementById(
+                          "aOfferCardsrow"
+                        ).innerHTML += `<div class="col-lg-3 col-md-4 position-relative aproductDiv">
+                                       <a class="aLinkCard" href="./Restaurant.html">
+                                       <figure class="aFigRes">
+                                       <img id="myimg" src=${url2}
+                                       class="card-img-top aImgCard" alt="...">
+                                       <figcaption class="aImgCaption">
+                                       <h4 class="aImgTitle">Broasted Fried Chicken with Syrian Flavor</h4>
+                                       </figcaption>
+                                       </figure>
+                                       
+                                          <div class=" position-relative card-body aCardBody">
+                   
+                                               <img id="aImgRes"
+                                                   src=${url1}
+                                                   alt="" class="rounded-3 me-3 float-start">
+                   
+                                               <h3 class="card-title " id="aResName">${
+                                                 doc2.data().ResName
+                                               }</h3>
+                                               <div class="mt-3">
+                                                   <div class="alert-success aDisAlert aDisAlertof" role="alert">
+                                                       ${doc.data().Description}
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </a>
+                                   </div>`;
+                    });
+                  });
+              //document.getElementsByClassName("aDisAlertof")[counter].innerHTML= `${doc.data().Description}`
+            }
+            console.log(`${doc.id} => ${doc.data().Description}`);
+          });
+        }
+      );
+    }
+  });
+});
 
 /*let p = document.getElementsByClassName("aproductDiv");
 let R_scrollingLength = 0;
@@ -105,10 +131,9 @@ getDocs(collection(firestore, "Restaurant")).then((snapshot) => {
     getDocs(collection(firestore, "Restaurant", doc2.id, "Offers")).then(
       (bla) => {
         bla.forEach((doc) => {
-            if(doc.data().Description){
-                //document.getElementsByClassName("aDisAlertof")[counter].innerHTML= `${doc.data().Description}`
-            counter++;
-            }
+          if (doc.data().Description) {
+            //document.getElementsByClassName("aDisAlertof")[counter].innerHTML= `${doc.data().Description}`
+          }
           console.log(`${doc.id} => ${doc.data().Description}`);
         });
       }
