@@ -125,11 +125,36 @@ hr{
 /* END OF TODELIVERY DIV STYLING */
 
 /* START OF OFFERS CARD STYLING */
-#wholeCard:hover .card-body,
-#wholeCard:hover,
-#wholeCard:hover #upperPart img{
-    opacity: 0.8;
-    transition: 0.4s ease-out;
+
+#wholeCard:hover{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#wholeCard:hover{
+    box-shadow: 0px 2px 5px 5px lightgrey;
+    
+}
+
+.card-body,
+#upperPart,
+#lowerPart
+{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#wholeCard:hover #upperPart,
+#wholeCard:hover #lowerPart,
+#wholeCard:hover .card-body{
+    background-color: rgb(243, 243, 243);
+    
+}
+
+#wholeCard:hover{
+    box-shadow: 0px 2px 5px 5px lightgrey;
     
 }
 
@@ -150,12 +175,16 @@ hr{
 }
 
 #upperPart{
+    position: relative;
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
+
+
 #restName {
+    position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -164,7 +193,34 @@ hr{
 
 }
 
+#offerDisc{
+    position: absolute;
+    background-color: rgba(2,2,2,0.5);
+    color: white;
+    padding: 4px;
+    opacity: 80%;
+    line-height: 50px;
+    height: 0;
+    width: 355px;
+    border-radius: 10px 50px 50px 10px;
+    left:-58px ;
+    transform:translateY(-150%);
+    visibility:hidden ;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#wholeCard:hover #offerDisc{
+    visibility: visible;
+    height: 50px;
+    transform:translateY(-120%);
+
+}
+
+
 #upperPart img{
+    position: relative;
     max-width: 45px;
     max-height:45px;
     border-radius: 10px;
@@ -277,6 +333,7 @@ hr{
 
 
 
+
 /* // X-Small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
 
@@ -292,6 +349,13 @@ hr{
         line-height: 35px;
         color:rgb(63, 63, 63);
     }
+
+    #offerDisc{
+        /* left:-39% */
+     
+    }
+    
+   
  }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -300,7 +364,10 @@ hr{
         margin-bottom: 120px;
     }
 
-
+    #offerDisc{
+        /* left:-43% */
+    
+    }
 
    
     
