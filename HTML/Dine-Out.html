@@ -14,6 +14,8 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 
+  <link rel="icon" href="/images/logo.png">
+
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/dineOut.css">
   <link rel="stylesheet" href="../css/style.css" />
@@ -23,6 +25,7 @@
   <link rel="stylesheet" href="../css/footer_smartphone.css" media="screen and (max-width: 500px)" />
   <link rel="stylesheet" href="../css/home.css">
 
+ 
 </head>
 
 <body>
@@ -30,7 +33,6 @@
   </nav>
 
   <nav class="nav-lg-Screen sticky-top d-lg-block d-none" id="pageNav-lg">
-
 
   </nav>
 
@@ -67,7 +69,7 @@
         background-position: center; background-size: cover; background-repeat: no-repeat;">
         <div
           style="background-image: linear-gradient(transparent, black); margin-top: auto; width: 100%; margin-left: 0; border-radius: 5px;">
-          <h1 class="mt-auto text-light fw-bold p-4">Coffeeshops</h1>
+          <h1 class="mt-auto text-light fw-bold p-4" style="cursor: pointer;" onclick="filterByMood(event)">Coffeeshops</h1>
         </div>
       </div>
       <div class="col-12 col-lg-6 d-flex mt-4">
@@ -78,7 +80,7 @@
             background-position: center; background-size: cover; background-repeat: no-repeat;">
               <div
                 style=" background-image: linear-gradient(transparent, black); margin-top: auto; width: 100%; margin-left: 0; border-radius: 5px;">
-                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px;">Work Or Study</h1>
+                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px; cursor: pointer;" onclick="filterByMood(event)">Work Or Study</h1>
               </div>
             </div>
           </div>
@@ -89,7 +91,7 @@
             background-position: center; background-size: cover; background-repeat: no-repeat;">
               <div
                 style="background-image: linear-gradient(transparent, black); margin-top: auto; width: 100%; margin-left: 0; border-radius: 5px;">
-                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px;">Casual Dining </h1>
+                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px; cursor: pointer;" onclick="filterByMood(event)">Casual Dining</h1>
               </div>
             </div>
           </div>
@@ -100,7 +102,7 @@
             background-position: center; background-size: cover; background-repeat: no-repeat;">
               <div
                 style="background-image: linear-gradient(transparent, black); margin-top: auto; width: 100%; margin-left: 0; border-radius: 5px;">
-                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px;">Hidden Gems</h1>
+                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px; cursor: pointer;" onclick="filterByMood(event)">Hidden Gems</h1>
               </div>
             </div>
           </div>
@@ -111,7 +113,7 @@
             background-position: center; background-size: cover; background-repeat: no-repeat;">
               <div
                 style="background-image: linear-gradient(transparent, black); margin-top: auto; width: 100%; margin-left: 0; border-radius: 5px;">
-                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px;">Food with a View</h1>
+                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px; cursor: pointer;" onclick="filterByMood(event)">Food with a View</h1>
               </div>
             </div>
           </div>
@@ -122,7 +124,7 @@
             background-position: center; background-size: cover; background-repeat: no-repeat;">
               <div
                 style="background-image: linear-gradient(transparent, black); margin-top: auto; width: 100%; margin-left: 0; border-radius: 5px;">
-                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px;">Romantic</h1>
+                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px; cursor: pointer;" onclick="filterByMood(event)">Romantic</h1>
               </div>
             </div>
           </div>
@@ -133,7 +135,7 @@
             background-position: center; background-size: cover; background-repeat: no-repeat;">
               <div
                 style="background-image: linear-gradient(transparent, black); margin-top: auto; width: 100%; margin-left: 0; border-radius: 5px;">
-                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px;">Fancy Dining</h1>
+                <h1 class="mt-auto text-light fw-bold p-4" style="font-size: 20px; cursor: pointer;" onclick="filterByMood(event)"">Fancy Dining</h1>
               </div>
             </div>
           </div>
@@ -144,717 +146,22 @@
   </section>
 
 
-  <section class="disByDishes-Slider container-fluid my-5 overflow-hidden">
+  <section class="disArear-Slider container-fluid  overflow-hidden">
     <div class="row">
-      <div class="col-12 mx-5 py-4">
-        <h3 class="fw-bold" style="color: rgb(88, 86, 86);">Discover by Dishes</h3>
-      </div>
-      <div class="col-12">
-        <div id="disByDishes-Slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-12 d-flex">
-                  <div class="item-1 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-2 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-3 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-4 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-5 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-6 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-7 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-8 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-9 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-10 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-12 d-flex">
-                  <div class="item-1 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-2 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-3 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-4 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-5 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-6 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-7 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-8 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-9 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-10 px-2">
-                    <div class="box-disByDishes">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b66b9310-bc6c-449c-a163-4c86947568c0.jpg"
-                          alt="" />
-                        <div class="detail-box">
-                          <a href="#" class="meal-kind">Pizza</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#disByDishes-Slider" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#disByDishes-Slider" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="disArear-Slider container-fluid my-5 overflow-hidden">
-    <div class="row">
-      <div class="col-12 mx-5 py-4">
-        <h4 class="fw-bold" style="color: rgb(88, 86, 86);">Discover Maadi</h4>
-      </div>
+     
       <div class="col-12">
         <div id="disArear-Slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
           <div class="carousel-inner">
-
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-12 d-flex">
-                  <div class="item-1 px-2 ">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
+                <div class="col-12 d-flex" id="cartContainMood">
+                  
 
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-2 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-3 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-4 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-5 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-6 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-7 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-8 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-9 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-10 px-2">
-                    <div class="box-disArear">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/c3855416-6df2-4b0e-acc8-20dcf78554f8.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind">Ali Baba</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <div class="row">
                 <div class="col-12 d-flex">
                   <div class="item-1 px-2 ">
@@ -987,7 +294,383 @@
                   </div>
                 </div>
               </div>
+            </div> -->
+
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#disArear-Slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#disArear-Slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="disByDishes-Slider container-fluid my-5 overflow-hidden">
+    <div class="row">
+      <div class="col-12 mx-5 py-4">
+        <h3 class="fw-bold" style="color: rgb(88, 86, 86);">Discover by Dishes</h3>
+      </div>
+      <div class="col-12">
+        <div id="disByDishes-Slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 d-flex" id="cardDishes">
+                <!-- Dieshes Container filled by JS -->
+                  
+                </div>
+              </div>
             </div>
+
+
+            <!-- <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 d-flex" id="cardDishes2">
+                 
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+          <!-- <button class="carousel-control-prev"  type="button" data-bs-target="#disByDishes-Slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#disByDishes-Slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="disArear-Slider container-fluid  overflow-hidden">
+    <div class="row">
+     
+      <div class="col-12">
+        <div id="disArear-Slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 d-flex" id="cartContainType">
+                  
+
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 d-flex">
+                  <div class="item-1 px-2 ">
+                    <div class="box-disArear" style="width: 400px; height: 350px;">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-2 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-3 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-4 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-5 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-6 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-7 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-8 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-9 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-10 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#disArear-Slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#disArear-Slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="disArear-Slider container-fluid my-5 overflow-hidden">
+    <div class="row">
+      <div class="col-12 mx-5 py-4">
+        <h4 class="fw-bold" style="color: rgb(88, 86, 86);">Discover Maadi</h4>
+      </div>
+      <div class="col-12">
+        <div id="disArear-Slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 d-flex" id="cardDiscovers">
+                  
+
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 d-flex">
+                  <div class="item-1 px-2 ">
+                    <div class="box-disArear" style="width: 400px; height: 350px;">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-2 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-3 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-4 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-5 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-6 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-7 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-8 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-9 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item-10 px-2">
+                    <div class="box-disArear">
+                      <div class="slide-img">
+                        <img
+                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/155c7faa-aff2-439f-a4bc-89fd1746258f.jpg"
+                          alt="" />
+                        <div class="detail-box">
+                          <a href="#" class="meal-kind">Pizza</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
 
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#disArear-Slider" data-bs-slide="prev">
@@ -1015,410 +698,14 @@
 
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-12 d-flex">
-                  <div class="item-1 px-2 ">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
+                <div class="col-12 d-flex" id="cartContentHiddenGems">
 
 
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-2 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-3 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-4 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-5 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-6 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-7 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-8 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-9 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-10 px-2">
-                    <div class="box-hiddenGems">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/de7f35a3-9f76-41ce-8ee1-d0d43bad4e63.jpg"
-                          alt="" />
-                        <div class="detail-box py-3">
-                          <img
-                            src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Thumbnail/b6aead7f-2225-11e8-924e-0242ac110011.jpg"
-                            alt="" style="width: 50px; max-width: 100%; height: auto; padding: 5px 0;">
-                          <div class="px-3">
-                            <p class="resturantDesc m-0" style="color: rgb(161, 157, 157); font-size: 10px;">
-                              Deserts. Egyptian. Oriental. Burger
-                            </p>
-                            <a href="#" class="meal-kind"> Il Mulino</a>
-                            <div class="d-flex">
-                              <p class="resturantRate text-warning">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half" aria-hidden="true"></i>
-                                <span style="color: var(--second-color); font-size: 10px;"> 21 Rating</span>
-                              </p>
-                              <p class="resturantStatus mx-4"
-                                style="color: red; border: 1px solid red; padding: 5px; border-radius: 50px; font-size: 8px;">
-                                Closed now
-                              </p>
-                            </div>
-
-
-                          </div>
-                        </div>
-                        <p style="font-size: 14px; color: rgb(161, 157, 157); padding: 0 20px;">
-                          Holiday Inn Hotel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <div class="row">
                 <div class="col-12 d-flex">
                   <div class="item-1 px-2 ">
@@ -1551,7 +838,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#hiddenGems-Slider" data-bs-slide="prev">
@@ -1579,165 +866,9 @@
 
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-12 d-flex">
-                  <div class="item-1 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-12 d-flex" id="cartContentNewRes">
 
-                  <div class="item-2 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-3 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-4 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-5 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-6 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-7 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-8 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-9 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item-10 px-2">
-                    <div class="box-newResturants">
-                      <div class="slide-img">
-                        <img
-                          src="https://s3-eu-west-1.amazonaws.com/elmenusv5-stg/Normal/66ada169-d8cd-4021-af20-ad7518ac74d2.jpg"
-                          alt="" />
-                        <div class="detail-box" style="flex-direction: column; justify-content: center;">
-                          <a href="#" class="meal-kind">Pizza</a>
-                          <p class="resturantDesc" style="color: rgb(161, 157, 157); font-size: 10px; margin:auto;">
-                            Coffee & Drinks
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -1871,10 +1002,14 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
 
+   
+
   <script>
     $('#pageNav-lg').load('nav-lg-Screen.html');
     $('#pageNav-sm').load('nav-sm-Screen.html');
   </script>
+
+
   <!--=========================SignUp Modals========================== -->
 
 <div class="modal fade" id="SignModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1957,7 +1092,9 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+    <script src="../JS/Dine-out.js" type="module"></script>
+
+   
 </body>
 
 </html>
