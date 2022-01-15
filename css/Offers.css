@@ -162,6 +162,12 @@ hr{
     margin-top: 25px;
 }
 
+#bigImg{
+    width: 100%;
+    height: 237px;
+    object-fit: cover;
+}
+
 #cardsSection a{
     text-decoration: none;
 }
@@ -350,10 +356,7 @@ hr{
         color:rgb(63, 63, 63);
     }
 
-    #offerDisc{
-        /* left:-39% */
-     
-    }
+ 
     
    
  }
@@ -362,11 +365,6 @@ hr{
 @media (min-width: 652px) { 
     #searchBarArea{
         margin-bottom: 120px;
-    }
-
-    #offerDisc{
-        /* left:-43% */
-    
     }
 
    
