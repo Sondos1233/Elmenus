@@ -84,7 +84,7 @@ getDocs(collection(firestore, "Restaurant")).then((snapshot) => {
                   });
               //document.getElementsByClassName("aDisAlertof")[counter].innerHTML= `${doc.data().Description}`
             }
-            console.log(`${doc.id} => ${doc.data().Description}`);
+            //console.log(`${doc.id} => ${doc.data().Description}`);
           });
         }
       );
@@ -126,7 +126,7 @@ let R_scrollingLength = 0;
 		// console.log(R_scrollingLength);
 	}
 */
-getDocs(collection(firestore, "Restaurant")).then((snapshot) => {
+/*getDocs(collection(firestore, "Restaurant")).then((snapshot) => {
   snapshot.forEach((doc2) => {
     getDocs(collection(firestore, "Restaurant", doc2.id, "Offers")).then(
       (bla) => {
@@ -139,4 +139,4 @@ getDocs(collection(firestore, "Restaurant")).then((snapshot) => {
       }
     );
   });
-});
+});*/
