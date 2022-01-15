@@ -8,7 +8,7 @@ import {
   doc,
   limit,
   query,
-  collectionGroup,
+  collectionGroup,where
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
 import {
   getStorage,
@@ -42,14 +42,30 @@ querySnapshot.forEach((doc) => {
   //console.log(doc.id, " => ", doc.data().Type);
   for (let len = 0; len < doc.data().Type.length; len++) {
     setTypes.add(doc.data().Type[len]);
+    //console.log(setTypes)
   }
- /* document.getElementById("afilterRowButtons").innerHTML = `
-  <div class="col-2">
-                                  <label class="aRadio">
-                                      <input type="radio" name="type" id="">
-                                      <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
-                                  </label>
-                              </div>
-                              <div class="col-10 aSortType">${setTypes[0]}</div>
-  `;*/
 });
+setTypes.forEach((el) => {
+  document.getElementById("afilterRowButtons").innerHTML += `<div class="col-2">
+  <label class="aRadio">
+          <input type="radio" name="type" class="TypeInput" id=${el}">
+                <span class="adot"></span> <i class="fas fa-dot-circle aCheckdot"> </i>
+  </label>
+            </div>
+          <div class="col-10 aSortType">${el}</div>
+  `;
+});
+for(let c =0 ; c<document.getElementsByClassName("TypeInput").length ; c++){
+  document.getElementsByClassName("TypeInput")[c].addEventListener("click",(el)=>{
+    TestQuery(el);
+  })
+}
+
+window.TestQuery=TestQuery
+async function TestQuery(el){
+  let qmm = query(collection(firestore,'Restaurant'),where('Type','array-contains',el));
+  var queryResult=await getDocs(qmm)
+  queryResult.forEach((doc)=>{
+                console.log(doc.data());
+    })
+  }

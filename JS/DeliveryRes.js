@@ -46,10 +46,13 @@ const querySnapshot2 = await getDocs(l);
 });*/
 let arr = [];
 querySnapshot2.forEach((doc2) => {
-  console.log(doc2.id, "->", doc2.data().Description);
-  arr.push(doc2.data().Description);
+  //console.log(doc2.id, "->", doc2.data().Description);
+  if(doc2.data().Description){
+
+    arr.push(doc2.data().Description);
+  }
 });
-console.log(arr);
+//console.log(arr);
 let counter = 0;
 function hello(rate){
     let count = 0 ;
